@@ -1,5 +1,5 @@
 {
-    "name": "tomsonar/larasearch",
+    "name": "iverberk/larasearch",
     "description": "Elasticsearch enabled Eloquent models",
     "keywords": ["search", "elasticsearch", "eloquent"],
     "license": "MIT",
@@ -15,9 +15,6 @@
         "illuminate/console": "~4.2|~5.0",
         "doctrine/dbal": "~2.3",
         "elasticsearch/elasticsearch": "~1.0"
-    },
-    "replace": {
-        "iverberk/larasearch": "0.6.*"
     },
     "autoload": {
         "psr-0": {
