@@ -317,7 +317,6 @@ class Query {
 			'body' => $this->payload
 		];
 
-		Log::debug($params);
 		return new Response($this->proxy->getModel(), $this->proxy->getClient()->search($params));
 	}
 
