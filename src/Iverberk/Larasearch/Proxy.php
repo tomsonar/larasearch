@@ -162,7 +162,7 @@ class Proxy {
 	{
 		$this->config['client']->index(
 			[
-				'id' => $model->id,
+				'id' => (isset($model::$indexId)) ? $model->{$model::$indexId}:$model->id,
 				'index' => $this->getIndex()->getName(),
 				'type' => $this->getType(),
 				'body' => $model->transform(true)
